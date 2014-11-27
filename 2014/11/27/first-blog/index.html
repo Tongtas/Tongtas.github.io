@@ -14,7 +14,17 @@
 开始:
 
 1:安装node.js  github hexo
-1sudo brew install node.js">
+1sudo brew install node.js
+
+
+
+1sudo brew install git
+
+
+
+1sudo brew install hexo
+
+More info brew inst">
     
     
     
@@ -83,8 +93,8 @@
       <a href="http://www.tongtas.com" title="Nie Cheng">Nie Cheng</a>
     </p>
   <p class="article-time">
-    <time datetime="2014-11-27T04:02:13.000Z" itemprop="datePublished">11月 27 2014</time>
-    更新日期:<time datetime="2014-11-27T04:02:12.000Z" itemprop="dateModified">11月 27 2014</time>
+    <time datetime="2014-11-27T04:27:06.000Z" itemprop="datePublished">11月 27 2014</time>
+    更新日期:<time datetime="2014-11-27T04:27:06.000Z" itemprop="dateModified">11月 27 2014</time>
     
   </p>
 </header>
@@ -93,7 +103,7 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#运行环境:"><span class="toc-number">1.</span> <span class="toc-text">运行环境:</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#开始:"><span class="toc-number"></span> <span class="toc-text">开始:</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1:安装node-js_github_hexo"><span class="toc-number"></span> <span class="toc-text">1:安装node.js  github hexo</span></a>
+		<ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#运行环境:"><span class="toc-number">1.</span> <span class="toc-text">运行环境:</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#开始:"><span class="toc-number"></span> <span class="toc-text">开始:</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1:安装node-js_github_hexo"><span class="toc-number"></span> <span class="toc-text">1:安装node.js  github hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2:安装完成后,"><span class="toc-number"></span> <span class="toc-text">2:安装完成后,</span></a>
 		</div>
 		
 		<h4 id="运行环境:">运行环境:</h4>
@@ -101,7 +111,42 @@
 <h1 id="开始:">开始:</h1>
 <hr>
 <h2 id="1:安装node-js_github_hexo">1:安装node.js  github hexo</h2>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> brew install node.js</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> brew install node.js</div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> brew install git</div></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> brew install hexo</div></pre></td></tr></table></figure>
+
+<p>More info <a href="www.baidu.com">brew install</a></p>
+<h2 id="2:安装完成后,">2:安装完成后,</h2>
+<p>默认安装目录是/usr/local/lib/node_modules/hexo</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd <span class="regexp">/usr/</span>local<span class="regexp">/lib/</span>node_modules<span class="regexp">/hexo</span></div></pre></td></tr></table></figure>
+
+<p>一般可以看到类似下面的目录</p>
+<p><img src="/Image/20141127/hexo_root.png" alt="hexo目录"></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> npm install -g hexo</div></pre></td></tr></table></figure>
+
+
+
+<p>然后进入assets目录</p>
+<p><img src="/Image/20141127/assets_root.png" alt="assets目录"></p>
+<p>接着在assets目录下依次执行如下代码</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">sudo</span> hexo s</div></pre></td></tr></table></figure>
+
+
+<p>我们就可以在浏览器中访问localhost:4000<br>如何访问出现404,或者其他的错误,请在assets目录下打开_config.yml</p>
+<p>原文:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">port</span>: <span class="string">4000</span></div><div class="line"><span class="attribute">server_ip</span>: <span class="string">localhost</span></div><div class="line"><span class="attribute">logger</span>: <span class="string">false</span></div><div class="line"><span class="attribute">logger_format</span>: <span class="string">dev</span></div></pre></td></tr></table></figure>
+
+
+<p>修改后:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">port</span>: <span class="string">4000</span></div><div class="line"><span class="attribute">server_ip</span>: <span class="string">127.0.0.1</span></div><div class="line"><span class="attribute">logger</span>: <span class="string">false</span></div><div class="line"><span class="attribute">logger_format</span>: <span class="string">dev</span></div></pre></td></tr></table></figure>
+
+
 
 <p><img src="/Image/20141127/blog.png" alt="Mou icon"></p>
   
@@ -143,7 +188,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#运行环境:"><span class="toc-number">1.</span> <span class="toc-text">运行环境:</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#开始:"><span class="toc-number"></span> <span class="toc-text">开始:</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1:安装node-js_github_hexo"><span class="toc-number"></span> <span class="toc-text">1:安装node.js  github hexo</span></a>
+  <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#运行环境:"><span class="toc-number">1.</span> <span class="toc-text">运行环境:</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#开始:"><span class="toc-number"></span> <span class="toc-text">开始:</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1:安装node-js_github_hexo"><span class="toc-number"></span> <span class="toc-text">1:安装node.js  github hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2:安装完成后,"><span class="toc-number"></span> <span class="toc-text">2:安装完成后,</span></a>
   </div>
 
 <div id="asidepart">
